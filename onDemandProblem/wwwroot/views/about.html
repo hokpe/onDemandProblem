@@ -1,0 +1,39 @@
+﻿<!--
+<div>
+    <a href="javascript:history.back()" class="btn btn-success"><i class="fa fa-angle-left" i18n="gen.backBtn"></i></a>
+</div>
+-->
+<div class="col-md-6 col-sx-12 col-md-offset-3 col-sx-offset-0">
+    <div class="text-danger" ng-show="vm.errorMessage">{{ vm.errorMessage}}</div>
+    <!--<wait-cursor ng-show="vm.isBusy"></wait-cursor>-->
+    <button class="btn btn-success" ng-click="vm.openDialog($event)">
+        Dialog
+    </button>
+    <h1>About</h1>
+    <!--
+    <div>
+        <p data-i18n="misc.version" data-version="{{vm.revision}}"></p>
+        <p i18n="misc.copyright"></p>
+        <p> </p>
+        <p i18n="misc.erwtInfoRow1"></p>
+        <p i18n="misc.erwtInfoRow2"></p>
+        <p i18n="misc.erwtInfoRow3"></p>
+        <p i18n="misc.erwtInfoRow4"></p>
+        <form novalidate name="feedbackForm" ng-submit="vm.sendFeedback()">
+            <div class="form-group">
+                <textarea class="form-control" type="text" id="name" name="feedback" cols="40" rows="5" ng-model="vm.feedback.text" required ng-minlength="10" />
+                <span ng-show="feedbackForm.feedback.$error.required" i18n="misc.feedbackRequired"></span>
+                <span ng-show="feedbackForm.feedback.$error.minlength" i18n="misc.feedbackMinLength"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="{{vm.submitText}}" class="btn btn-success" ng-disabled="feedbackForm.$invalid" />
+                <span ng-show="vm.modifiedMessage">{{ vm.modifiedMessage}}</span>
+            </div>
+            <div>
+                <p i18n="regist.gdpr"></p>
+                <a ng-href="#/GDPR" class="btn btn-default">GDPR</a>
+            </div>
+        </form>
+    </div>
+    -->
+</div>

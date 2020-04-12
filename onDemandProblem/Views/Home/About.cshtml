@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+@section Scripts {
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/angular-route/angular-route.min.js"></script>
+    <script src="~/lib/angular-animate/angular-animate.min.js"></script>
+    <script src="~/lib/angular-aria/angular-aria.min.js"></script>
+    <script src="~/lib/angular-material/angular-material.js"></script>
+    <script src="~/lib/font-awesome/js/all.min.js"></script>
+    <!--
+    <script src="~/lib/_app/templates.js" asp-append-version="true"></script>
+    -->
+    <environment names="Development">
+        <script src="~/js/myApp.js" asp-append-version="true"></script>
+        <script src="~/js/aboutController.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Production">
+        <script src="~/lib/myApp.js" asp-append-version="true"></script>
+        <script src="~/lib/aboutController.js" asp-append-version="true"></script>
+    </environment>
+}
+<div class="row" ng-app="myApp">
+    <div ng-view></div>
+</div>
